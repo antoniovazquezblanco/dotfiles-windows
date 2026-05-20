@@ -21,5 +21,5 @@ When cloning or pulling repositories with LFS over SSH from PowerShell/CMD, Git 
 Set Git to use the Git for Windows SSH client instead of the built-in Windows OpenSSH:
 
 ```powershell
-git config --global core.sshCommand "'C:\Windows\System32\OpenSSH\ssh.exe'"
+git config --global core.sshCommand 'C:/Windows/System32/OpenSSH/ssh.exe'
 ```
