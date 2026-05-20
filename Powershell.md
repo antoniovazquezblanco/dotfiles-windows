@@ -26,7 +26,7 @@ Install PSReadLine as `Administrator`:
 Install-Module PSReadLine -Repository PSGallery -Scope CurrentUser -Force
 ```
 
-## posh-sshell
+## Posh SSHell
 
 PowerShell module that provides utilities for working with SSH connections within PowerShell. Among others, it can automatically start the SSH Agent for you.
 
@@ -42,4 +42,15 @@ Configure SSH agent startup, also as `Administrator`:
 Set-Service -Name ssh-agent -StartupType Automatic
 Start-Service -Name ssh-agent
 if (-not (Test-Path $PROFILE)) { New-Item -ItemType File -Path $PROFILE -Force | Out-Null }; if (-not (Select-String -Path $PROFILE -Pattern 'Start-SshAgent -Quiet' -SimpleMatch -Quiet)) { Add-Content -Path $PROFILE -Value 'Start-SshAgent -Quiet' }
+```
+
+## Posh Git
+
+Git autocompletion and command line git repository status.
+
+Install Posh Git as `Administrator`:
+
+```powershell
+Install-Module posh-git -Repository PSGallery -Scope CurrentUser -Force
+Add-PoshGitToProfile
 ```
