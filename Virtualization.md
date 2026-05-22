@@ -1,7 +1,10 @@
 # Virtualization
 
 There are two possible worlds here: Hyper-V (Microsoft) vs any other software (VirtualBox, VMWare...).
-Sometimes, it is not possible to disable Hyper-V if your PC has security requirements that depend on Windows virtualization services.
+
+On one hand, Hyper-V lacks some basic virtualization features such as USB device passthrough or mounting isolated folders.
+
+On the other hand, sometimes, it is not possible to disable Hyper-V if your PC has security requirements that depend on Windows virtualization services.
 
 ## Enabling Hyper-V
 
